@@ -60,7 +60,7 @@ Fichiers personnalisés :
 ```bash
 git add .
 git commit -m "version initiale"
-git remote add origin https://github.com/pbillerot/beedule-learn.git
+git remote add github git@github.com:pbillerot/beedule-learn.git
 git remote -v
-git branch --set-upstream-to=origin/master master
+git branch --set-upstream-to=github/master master
 ```
