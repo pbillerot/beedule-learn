@@ -55,3 +55,12 @@ Fichiers personnalisés :
 ├── config.yaml
 └── readme.md
 ```
+
+## Référentiel du code dans Github
+```bash
+git add .
+git commit -m "version initiale"
+git remote add origin https://github.com/pbillerot/beedule-learn.git
+git remote -v
+git branch --set-upstream-to=origin/master master
+```
