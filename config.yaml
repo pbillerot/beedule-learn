@@ -1,0 +1,60 @@
+baseURL: "https://beedule.billerot.eu/learn/"
+defaultContentLanguage: fr
+canonifyURLs: true
+title: "Apprendre Beedule"
+theme: "hugo-theme-relearn"
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+
+# https://mcshelby.github.io/hugo-theme-relearn/
+params:
+  # Author of the site, will be used in meta information
+  author: "philippe.billerot@gmail.com"
+  # Description of the site, will be used in meta information
+  description: "Apprendre à développer une application web avec le framework Beedule"
+  # this can be overridden in the pages frontmatter
+  alwaysopen: true  
+  # A title for shortcuts in menu is set by default. Set this to true to disable it.
+  disableShortcutsTitle: true
+  # If set to false, a Home button will appear below the search bar on the menu.
+  # It is redirecting to the landing page of the current language if specified. (Default is "/")
+  disableLandingPageButton: true
+  # Hide breadcrumbs in the header and only show the current page title
+  disableBreadcrumb: false
+  # If set to true, hide table of contents menu in the header of all pages
+  disableToc: false
+  # If set to true, prevents Hugo from including the Mermaid module if not needed (will reduce load times and traffic)
+  disableMermaid: true
+  # Hide Next and Previous page buttons normally displayed full height beside content
+  disableNextPrev: true
+  # Order sections in menu by "weight" or "title". Default to "weight";
+  # this can be overridden in the pages frontmatter
+  ordersectionsby: "weight"
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant: "green"
+  # Provide a list of custom css files to load relative from the `static/` folder in the site root.
+  # custom_css: ["css/foo.css", "css/bar.css"]
+  custom_css: ["css/beedule.css"]
+  # Change the title separator. Default to "::".
+  titleSeparator: "::"
+
+markup:
+  highlight:
+  # https://xyproto.github.io/splash/docs/all.html
+    style: monokai # monokai friendly emacs
+    guessSyntax: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+menu:
+  shortcuts:
+    - identifier: "tr"
+      name: "<i class='fas fa-fw fa-bookmark'></i> Aide thème Relearn"
+      url: "https://mcshelby.github.io/hugo-theme-relearn/"
+      weight: 100
+    - identifier: "ai"
+      name: "<i class='fas fa-fw fa-flag'></i> Aide Awesome Icons"
+      url: "https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free"
+      weight: 110
+
