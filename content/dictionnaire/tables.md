@@ -3,6 +3,8 @@ title: "Les tables"
 weight: 20
 ---
 
+Bizarre
+
 ```yaml
 # la base de données
 setting:

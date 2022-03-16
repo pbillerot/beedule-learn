@@ -2,16 +2,15 @@
 title: "Options des rubriques"
 weight: 35
 ---
-
 ## args
 ```yaml
 # Pour passer des arguments au formulaire d'ajout
 args: "valeur"
 ```
-## class-sql
+## class-sqlite
 ```yaml
 # Class CSS calculé en SQL utilisée dans les vues
-class-sql: "select case when {ptf_gain} > 0 then 'green' when {ptf_gain} < 0 then 'red' end"
+class-sqlite: "select case when {ptf_gain} > 0 then 'green' when {ptf_gain} < 0 then 'red' end"
 ```
 ## col-align
 ```yaml
@@ -23,11 +22,11 @@ col-align: "left"
 # Pour éviter la césure du contenu dans la cellule d'une vue
 col-nowrap: true
 ```
-## compute-sql
+## compute-sqlite
 ```yaml
 # Pour calculer la valeur de la rubrique dans un formulaire en édition
 # La rubrique sera protégée
-compute-sql: "select '{orders_buy}' * '{orders_quantity}' + '{orders_buy}' * '{orders_quantity}' * '{__cost}'"
+compute-sqlite: "select '{orders_buy}' * '{orders_quantity}' + '{orders_buy}' * '{orders_quantity}' * '{__cost}'"
 ```
 ## dataset
 ```yaml
@@ -43,17 +42,17 @@ dataset:
 # Valeur par défaut
 default: "buy"
 ```
-## default-sql
+## default-sqlite
 ```yaml
 # Valeur par défaut calculée en SQL
-default-sql: "select datetime('now', 'localtime')"
+ite: "select datetime('now', 'localtime')"
 ```
-## format-sql
+## format-sqlite
 ```yaml
 # Mise en forme d'une valeur
-format-sql: "select printf('%3.2f Mo', {Bytes}.00/1000000, 'unixepoch')"
+format-sqlite: "select printf('%3.2f Mo', {Bytes}.00/1000000, 'unixepoch')"
 ...
-format-sql: "select strftime('%M:%S', {Milliseconds}/1000, 'unixepoch')"
+format-sqlite: "select strftime('%M:%S', {Milliseconds}/1000, 'unixepoch')"
 ```
 ## grid
 ```yaml
@@ -80,10 +79,10 @@ hide: true
 # La colonne sera cachée sur les mobiles (largeur écran <768px
 hide-on-mobile: true
 ```
-## hide-sql
+## hide-sqlite
 ```yaml
 # Pour cacher le champ ou la colonne via une requête SQL
-hide-sql: "select 'ok' where ..."
+hide-sqlite: "select 'ok' where ..."
 ```
 ## items
 ```yaml

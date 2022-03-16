@@ -1,7 +1,7 @@
 ---
 title: "L'éditeur en ligne"
 pre: "<b>3. </b>"
-chapter: true
+chapter: false
 weight: 30
 ---
 

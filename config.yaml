@@ -1,13 +1,19 @@
 baseURL: "https://beedule.billerot.eu/learn/"
-defaultContentLanguage: fr
 canonifyURLs: true
+relativeURLs: true
+
 title: "Apprendre Beedule"
 theme: "hugo-theme-relearn"
+
+languageCode: "fr"
+defaultContentLanguage: "fr"
+
 outputs:
   home: ["HTML", "RSS", "JSON"]
 
 # https://mcshelby.github.io/hugo-theme-relearn/
 params:
+  editURL: "https://philippe.billerot.eu/victor/document/"
   # Author of the site, will be used in meta information
   author: "philippe.billerot@gmail.com"
   # Description of the site, will be used in meta information
@@ -16,6 +22,8 @@ params:
   alwaysopen: true  
   # A title for shortcuts in menu is set by default. Set this to true to disable it.
   disableShortcutsTitle: true
+  # Set this to true to disable copy-to-clipboard button for inline code.
+  disableInlineCopyToClipBoard: false
   # If set to false, a Home button will appear below the search bar on the menu.
   # It is redirecting to the landing page of the current language if specified. (Default is "/")
   disableLandingPageButton: true
@@ -26,23 +34,24 @@ params:
   # If set to true, prevents Hugo from including the Mermaid module if not needed (will reduce load times and traffic)
   disableMermaid: true
   # Hide Next and Previous page buttons normally displayed full height beside content
-  disableNextPrev: true
+  disableNextPrev: false
   # Order sections in menu by "weight" or "title". Default to "weight";
   # this can be overridden in the pages frontmatter
   ordersectionsby: "weight"
   # Change default color scheme with a variant one. Can be "red", "blue", "green".
-  themeVariant: "green"
+  themeVariant: "relearn-light"
   # Provide a list of custom css files to load relative from the `static/` folder in the site root.
   # custom_css: ["css/foo.css", "css/bar.css"]
-  custom_css: ["css/beedule.css"]
+  # custom_css: ["css/beedule.css"]
   # Change the title separator. Default to "::".
   titleSeparator: "::"
 
 markup:
   highlight:
   # https://xyproto.github.io/splash/docs/all.html
-    style: monokai # monokai friendly emacs
+    #style: xcode # native tango xcode base16-snazzy
     guessSyntax: false
+    noClasses: false
   goldmark:
     renderer:
       unsafe: true
