@@ -32,7 +32,7 @@ params:
   # If set to true, hide table of contents menu in the header of all pages
   disableToc: false
   # If set to true, prevents Hugo from including the Mermaid module if not needed (will reduce load times and traffic)
-  disableMermaid: true
+  disableMermaid: false
   # Hide Next and Previous page buttons normally displayed full height beside content
   disableNextPrev: false
   # Order sections in menu by "weight" or "title". Default to "weight";
@@ -42,7 +42,7 @@ params:
   themeVariant: "relearn-light"
   # Provide a list of custom css files to load relative from the `static/` folder in the site root.
   # custom_css: ["css/foo.css", "css/bar.css"]
-  # custom_css: ["css/beedule.css"]
+  custom_css: ["css/custom.css"]
   # Change the title separator. Default to "::".
   titleSeparator: "::"
 
@@ -58,11 +58,19 @@ markup:
 
 menu:
   shortcuts:
-    - identifier: "tr"
+    - identifier: "beebule"
+      name: "<i class='fab fa-github'></i> Beedule sur Github"
+      url: "https://github.com/pbillerot/beedule"
+      weight: 10
+    - identifier: "github"
+      name: "<i class='fab fa-github'></i> Cette documentation sur Github"
+      url: "https://github.com/pbillerot/beedule-learn"
+      weight: 20
+    - identifier: "relearn"
       name: "<i class='fas fa-fw fa-bookmark'></i> Aide thème Relearn"
       url: "https://mcshelby.github.io/hugo-theme-relearn/"
       weight: 100
-    - identifier: "ai"
+    - identifier: "awesome"
       name: "<i class='fas fa-fw fa-flag'></i> Aide Awesome Icons"
       url: "https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free"
       weight: 110

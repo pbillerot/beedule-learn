@@ -1,0 +1,26 @@
+/*
+    Personnalisation du CSS pour Beedule
+*/
+
+#logo {
+  margin-top: -0.5em;
+}
+.searchbox {
+  margin-top: 0;
+}
+#footer {
+  text-align: center;
+}
+
+.copy-to-clipboard-button {
+  display: none;
+} 
+
+body main img {
+  border: solid #d8d8d8 1px;
+  box-shadow: 0 10px 30px rgb(200 200 200 / 67%);
+}
+
+#body img {
+  display: inherit;
+}

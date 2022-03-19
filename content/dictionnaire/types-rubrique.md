@@ -4,7 +4,7 @@ weight: 32
 ---
 ## action
 - Affiche un bouton dans le formulaire
-- L'activation va démarrer les requêtes SQL définies dans le parametre `actions.sql`
+- L'activation va démarrer les requêtes SQL définies dans le parametre `actions`
 ```yaml
 elements:
   _refresh_buy:
@@ -19,6 +19,7 @@ elements:
 
 ## amount
 - Gère les montants en €
+
 ![](/images/type-amount.png)
 
 ```yaml

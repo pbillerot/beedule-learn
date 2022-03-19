@@ -22,7 +22,6 @@ type Action struct {
 	WithConfirm bool     `yaml:"with-confirm"` // demande de  confirmation
 	Hide        bool     // Action non visible
 	HideSqlite  string   `yaml:"hide-sqlite"` // requête pour cachée l'action
-	Plugin      string   // Fonction Système à appeler nomFonction(p1, p2, ...)
 }
 ```
 

@@ -1,10 +1,10 @@
 ---
-title: "Presentation"
+title: "Ergonomie"
 pre: "<b>1. </b>"
 chapter: false
 weight: 10
 ---
-Beedule propose les interfaces utilisateur suivantes :
+L'interface utilisateur de Beedule est la suivante:
 
 ## La page du portail
 

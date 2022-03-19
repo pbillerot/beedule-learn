@@ -2,11 +2,13 @@
 title: "Apprendre Beedule"
 ---
 
-# Bienvenue dans "Apprendre Beedule"
+# "Apprendre Beedule"
 
-{{% notice warning %}}
+{{% notice note %}}
 Ce site est en construction
 {{% /notice %}}
+
+![](/images/apropos.png)
 
 **BEEDULE** est un **cadriciel** de développement et un **serveur** d'application WEB
 
@@ -16,7 +18,12 @@ Le **développeur d'application** Beedule aura à décrire les vues, les formula
 
 L'objectif du guide est de vous présenter :
 
-- comment installer **Beedule** sur un serveur dans un container **[DOCKER](https://fr.wikipedia.org/wiki/Docker_(logiciel))**
+- l'interface et le style d'un site "beedulien"
 - la structure du dictionnaire
 - l'éditeur du dictionnaire
-- ...
+- l'installation de **[BEEDULE](https://github.com/pbillerot/beedule)** sur un serveur **[DEBIAN](https://fr.wikipedia.org/wiki/Debian)** dans un container **[DOCKER](https://fr.wikipedia.org/wiki/Docker_(logiciel))**
+
+Cette documentation a été construite avec 
+- **[HUGO](https://gohugo.io/)** le générateur du site
+- **[RELEARN](https://mcshelby.github.io/hugo-theme-relearn/)** le thème utilisé pour le site
+- **[VICTOR](https://philippe.billerot.eu/victor-doc/)** l'éditeur en ligne des fichiers d'un site Hugo
